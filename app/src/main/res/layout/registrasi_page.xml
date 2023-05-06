@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.admin.Registasi"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/regisrtasi"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessLeaf">
+                <TextView
+                    android:padding="10dp"
+                    android:text="Hello, Pengguna"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+            <TextView
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Ayo Daftarkan diri untuk banyak lebih berinteraksi dengan aplikasi..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/nama_lengkap"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:hint="Tuliskan Nama Lengkap"
+                android:background="@drawable/border_input"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText"
+                android:layout_marginBottom="10dp"
+                android:importantForAutofill="no" />
+            <EditText
+                android:inputType="text"
+                android:padding="10dp"
+                android:id="@+id/alamat"
+                android:textSize="12sp"
+                android:hint="Tuliskan alamat rumah "
+                android:background="@drawable/border_input"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText"
+                android:layout_marginBottom="10dp"
+                android:importantForAutofill="no" />
+            <EditText
+                android:id="@+id/nomor_handphone"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Tuliskan nomor handphone"
+                android:background="@drawable/border_input"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,TextFields"
+                android:layout_marginBottom="10dp"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/username"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Tuliskan nama pengguna"
+                android:background="@drawable/border_input"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText"
+                android:layout_marginBottom="10dp"
+                android:importantForAutofill="no" />
+            <EditText
+                android:id="@+id/sandi"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:hint="Tuliskan sandi"
+                android:background="@drawable/border_input"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText"
+                android:layout_marginBottom="10dp"
+                android:importantForAutofill="no" />
+            <EditText
+                android:id="@+id/ulang_sandi"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Tuliskan ulang sandi"
+                android:background="@drawable/border_input"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText"
+                android:layout_marginBottom="10dp"
+                android:importantForAutofill="no" />
+            <TextView
+                android:id="@+id/btn_daftar"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:text="Daftar akun"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/corner_for_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

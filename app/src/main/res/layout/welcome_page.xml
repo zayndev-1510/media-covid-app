@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#242A37"
+    tools:context=".activity.SplashScreen"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/lottie_animation"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:lottie_speed="1"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/covid_2"
+            />
+        <TextView
+            android:text="Hello, Selamat Datang"
+            android:layout_width="match_parent"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:text="@string/welcome"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/btn_masuk"
+                android:background="@drawable/corner_for_btn"
+                android:text="Masuk Akun"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/btn_daftar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corner_for_btn"
+                    android:backgroundTint="@color/purple_700"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="end"
+                    android:padding="10dp"
+                    android:text="Daftar Akun"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layout_recycle"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:layout_width="match_parent"
+        android:id="@+id/item_muat_video"
+        app:use_controller="false"
+        android:layout_height="200dp"/>
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:padding="10dp"
+           android:textSize="20sp"
+           android:id="@+id/item_judul_video"
+           android:text="Pencegahan Covid"
+           android:layout_width="350dp"
+           android:layout_height="wrap_content"
+           tools:ignore="HardcodedText" />
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/delete_video_item"
+               android:layout_width="wrap_content"
+               android:layout_height="35dp"
+               android:layout_gravity="end"
+               android:layout_marginTop="10dp"
+               android:visibility="invisible"
+               android:src="@drawable/ic_baseline_check_circle_outline_24" />
+       </RelativeLayout>
+   </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:text="Jumlah Penonton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:padding="10dp"
+            android:text="10"
+            android:id="@+id/item_jml_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:text="Jumlah Suka"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:padding="10dp"
+            android:text="10"
+            android:id="@+id/item_jml_suka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:text="Jumlah Komentar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:padding="10dp"
+            android:text="10"
+            android:id="@+id/item_jml_komentar_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

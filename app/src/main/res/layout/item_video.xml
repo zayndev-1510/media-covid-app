@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <LinearLayout
+       android:background="#242A37"
+       android:padding="5dp"
+       android:id="@+id/linear_klik"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_marginBottom="10dp"
+       android:layout_height="match_parent">
+      <com.google.android.exoplayer2.ui.PlayerView
+          android:layout_width="match_parent"
+          android:id="@+id/item_muat_video_pengguna"
+          app:use_controller="false"
+          android:layout_height="200dp">
+
+         <ProgressBar
+             android:layout_width="wrap_content"
+             android:id="@+id/loading_video_pengguna_home"
+             android:layout_gravity="center_vertical|center"
+             android:layout_height="wrap_content" />
+      </com.google.android.exoplayer2.ui.PlayerView>
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <TextView
+             android:padding="10dp"
+             android:textSize="15sp"
+             android:id="@+id/item_judul_video_pengguna"
+             android:text="Pencegahan Covid"
+             android:fontFamily="@font/poppins_medium"
+             android:layout_width="match_parent"
+             android:textColor="@color/white"
+             android:layout_height="wrap_content"
+             tools:ignore="HardcodedText" />
+      </LinearLayout>
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <TextView
+             android:padding="10dp"
+             android:textSize="12sp"
+             android:textColor="@color/white"
+             android:fontFamily="@font/poppins_medium"
+             android:id="@+id/item_jumlah_view_pengguna"
+             android:text="100 orang yang melihat"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             tools:ignore="HardcodedText" />
+         <TextView
+             android:padding="10dp"
+             android:textSize="12sp"
+             android:textColor="@color/white"
+             android:fontFamily="@font/poppins_medium"
+             android:text="20 orang yang menyukai"
+             android:id="@+id/item_jumlah_like_pengguna"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             tools:ignore="HardcodedText" />
+      </LinearLayout>
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <TextView
+             android:padding="10dp"
+             android:textSize="12sp"
+             android:textColor="@color/white"
+             android:fontFamily="@font/poppins_medium"
+             android:id="@+id/item_format_tgl_pengguna"
+             android:text="17 jam yang lalu by admin"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:ignore="HardcodedText" />
+      </LinearLayout>
+   </LinearLayout>
+
+</LinearLayout>

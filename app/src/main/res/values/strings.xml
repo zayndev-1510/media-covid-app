@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MediaCovid App</string>
+    <string name="ipadress">http://192.168.43.174:8000/api/</string>
+    <string name="ipgeneral">http://192.168.43.174:8000/</string>
+    <string name="welcome">Media covid App adalah aplikasi media untuk melihat Video Pencegahan dan Penanganan Covid  yang disajikan dalam bentuk animasi
+    </string>
+</resources>

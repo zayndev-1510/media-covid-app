@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="Luffydono"
+        android:id="@+id/nama_lengkap_komentar"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:padding="10dp"
+        android:textSize="13sp"
+        android:id="@+id/komentar_user"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="-20dp"
+        android:text="Terima kasih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginTop="-20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="3 Menit Yang Lalu"
+            android:textSize="12sp"
+            android:id="@+id/waktu_komentar"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:id="@+id/reply"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Balas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <TextView
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:id="@+id/view_more"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Lihat balasan lainnya"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="HardcodedText" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="-10dp"
+        android:id="@+id/rcy_sub_komentar"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

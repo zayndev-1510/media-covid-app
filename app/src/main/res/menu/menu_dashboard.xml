@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/profil"
+        android:title="Profil"
+        android:icon="@drawable/ic_baseline_person_pin_24"
+        tools:ignore="HardcodedText" />
+</menu>
